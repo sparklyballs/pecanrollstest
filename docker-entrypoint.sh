@@ -11,8 +11,7 @@ cd /rolls-blockchain || exit 1
 # shellcheck disable=SC1091
 . ./activate
 
-rolls init
-# rolls init --fix-ssl-permissions
+rolls init --fix-ssl-permissions
 
 if [[ ${testnet} == 'true' ]]; then
    echo "configure testnet"
